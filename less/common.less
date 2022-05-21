@@ -1,0 +1,119 @@
+
+@vw:3.75vw;
+
+.active{
+    p{
+        color: #ea136b;
+    }
+}
+
+
+
+
+// 顶部状态栏
+.status {
+    height: (30/@vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 (10/@vw);
+
+    .left {
+        width: (80/@vw);
+        height: (13/@vw);
+        background-image: url(../image/wifi.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .center {
+        width: (36/@vw);
+        height: (13/@vw);
+        line-height: (13/@vw);
+        text-align: center;
+        font-size: (12/@vw);
+        color: white;
+    }
+
+    .right {
+        width: (70/@vw);
+        height: (13/@vw);
+        background-image: url(../image/battery.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+// 底部状态栏
+.status_bar{
+    height: (43/@vw);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: (1/@vw) solid #dcdcdc;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 (12/@vw);
+        align-items: center;
+        height: 100%;
+        li{
+            a{
+                display: block;
+                text-align: center;
+                i{
+                    width: (18/@vw);
+                    height: (18/@vw);
+                    background-image: url(../image/spirit_03.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: (215/@vw) (18/@vw);
+                    background-position: -(23/@vw) 0;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: (5/@vw);
+                }
+                p{
+                    font-size: (12/@vw);
+                    line-height: (12/@vw);
+                }
+
+            }
+            &:nth-child(2){
+                a{
+                    i{
+                        background-position: -(45/@vw) 0;
+                    }
+                }
+            }
+            &:nth-child(3){
+                a{
+                    i{
+                        background-position: -(87/@vw) 0;
+                    }
+                }
+            }
+            &:nth-child(4){
+                a{
+                    i{
+                        background-position: -(130/@vw) 0;
+                    }
+                }
+            }
+            &:nth-child(5){
+                a{
+                    i{
+                        background-position: -(173/@vw) 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
