@@ -135,22 +135,24 @@ header {
         }
     }
 
-    .nav{
+    .nav {
         height: (27/@vw);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 (16/@vw);
-        span{
+
+        span {
             width: (16/@vw);
             height: (16/@vw);
             background-image: url(../image/spirit_04.png);
             background-size: ((199/2)/@vw) (16/@vw);
             background-repeat: no-repeat;
             background-position: -(21/@vw) 0;
-            
+
         }
-        p{
+
+        p {
             width: (13/@vw);
             height: (14/@vw);
             background-image: url(../image/spirit_04.png);
@@ -158,7 +160,8 @@ header {
             background-repeat: no-repeat;
             background-position: 0 0;
             position: relative;
-            i{
+
+            i {
                 width: (6/@vw);
                 height: (6/@vw);
                 background-color: #e60012;
@@ -169,29 +172,32 @@ header {
             }
 
         }
-        .search{
+
+        .search {
             width: (291/@vw);
             height: (27/@vw);
             background-color: #fff;
             border-radius: ((27/2)/@vw);
             display: flex;
             align-items: center;
-            i{
+
+            i {
                 width: (15/@vw);
                 height: (15/@vw);
                 background-image: url(../image/spirit_04.png);
                 background-size: ((199/2)/@vw) (16/@vw);
                 background-repeat: no-repeat;
-                background-position: -(85/@vw) 0;    
+                background-position: -(85/@vw) 0;
                 margin: 0 (9/@vw);
                 display: block;
             }
-            input{
+
+            input {
                 width: (187/@vw);
                 outline: none;
                 border: 0;
 
-                &::placeholder{
+                &::placeholder {
                     font-size: (12/@vw);
                     color: #393939;
                 }
@@ -199,7 +205,7 @@ header {
         }
     }
 
-    .pic{
+    .pic {
         width: (115/@vw);
         height: (80/@vw);
         background-image: url(../image/banner_03.png);
@@ -211,7 +217,7 @@ header {
         bottom: (50/@vw);
     }
 
-    .dot{
+    .dot {
         width: 100%;
         height: (30/@vw);
         background-color: #fff;
@@ -219,24 +225,197 @@ header {
         left: 0;
         bottom: -(16/@vw);
         border-radius: 50%;
-        ul{
+
+        ul {
             margin: (7/@vw) auto;
             width: (31/@vw);
             height: (6/@vw);
             display: flex;
             justify-content: space-between;
-            li{
-                a{
+
+            li {
+                a {
                     display: block;
                     width: (7/@vw);
                     height: (6/@vw);
                     background-color: #d4b1ed;
                     border-radius: 50%;
                 }
-                &:first-child a{
+
+                &:first-child a {
                     background-color: #aa64db;
                 }
 
+            }
+        }
+    }
+}
+
+
+// 主体内容
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon_bar {
+        height: (124/@vw);
+        width: (342/@vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
+        margin-top: (22/@vw);
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                a {
+                    display: block;
+
+                    .pic {
+                        width: (33/@vw);
+                        height: (34/@vw);
+                        background-image: url(../image/spirit_05.png);
+                        background-position: 0 0;
+                        background-size: ((389/2)/@vw) ((153/2)/@vw);
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: (10/@vw);
+                    }
+
+                    p {
+                        font-size: (12/@vw);
+                        line-height: (12/@vw);
+                        text-align: center;
+                        color: #333;
+                    }
+                }
+
+                &:nth-child(2) {
+                    a {
+                        .pic {
+                            background-position: -(40/@vw) 0;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    a {
+                        .pic {
+                            background-position: -(81/@vw) 0;
+                        }
+                    }
+                }
+                &:nth-child(4) {
+                    a {
+                        .pic {
+                            background-position: -(123/@vw) 0;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    a {
+                        .pic {
+                            background-position: -(162/@vw) 0;
+                        }
+                    }
+                }
+
+            }
+            &:last-child{
+                li{
+                    &:nth-child(1) {
+                        a {
+                            .pic {
+                                background-position: 0 -(42/@vw);
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        a {
+                            .pic {
+                                background-position: -(40/@vw) -(42/@vw);
+                            }
+                        }
+                    }    
+                    &:nth-child(3) {
+                        a {
+                            .pic {
+                                background-position: -(83/@vw) -(42/@vw);
+                            }
+                        }
+                    }    
+                    &:nth-child(4) {
+                        a {
+                            .pic {
+                                background-position: -(123/@vw) -(42/@vw);
+                            }
+                        }
+                    }    
+                    &:nth-child(5) {
+                        a {
+                            .pic {
+                                background-position: -(162/@vw) -(42/@vw);
+                            }
+                        }
+                    }    
+
+                }
+            }
+        }
+    }
+    .pic_md{
+        width: (354/@vw);
+        height: (98/@vw);
+        background-image: url(../image/banner_02.png);
+        background-size: ((707/2)/@vw) ((191/2)/@vw);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: (25/@vw);
+    }
+    .goods{
+        padding: 0 (8/@vw);
+        width: 100%;
+        margin-top: (19/@vw);
+        .nav{
+            height: (15/@vw);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: (13/@vw);
+            .left{
+                font-size: (15/@vw);
+                line-height: (15/@vw);
+            }
+            .right{
+                font-size: (10/@vw);
+                color: #4b4b4b;
+                margin-top: (5/@vw);
+                margin-right: (3/@vw);
+            }
+        }
+        .shops{
+            display: flex;
+            justify-content: space-between;
+            a{
+                display: block;
+                .pic{
+                    width: (115/@vw);
+                    height: (90/@vw);
+                    background-image: url(../uploads/goods_01.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin: 0 auto;
+                }
+                .txt{
+                    font-size: (10/@vw);
+                    text-align: center;
+                    margin-top: (9/@vw);
+                    line-height: (10/@vw);
+                    color: #333;
+                }
             }
         }
     }
