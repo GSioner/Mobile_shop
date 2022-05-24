@@ -1,0 +1,334 @@
+@charset 'UTF-8';
+body,
+ul,
+p,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.active p {
+  color: #ea136b;
+}
+.status_bar {
+  height: 11.46666667vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 0.26666667vw solid #dcdcdc;
+}
+.status_bar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3.2vw;
+  align-items: center;
+  height: 100%;
+}
+.status_bar ul li a {
+  display: block;
+  text-align: center;
+}
+.status_bar ul li a i {
+  width: 4.8vw;
+  height: 4.8vw;
+  background-image: url(../image/spirit_03.png);
+  background-repeat: no-repeat;
+  background-size: 57.33333333vw 4.8vw;
+  background-position: -6.13333333vw 0;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.33333333vw;
+}
+.status_bar ul li a p {
+  font-size: 3.2vw;
+  line-height: 3.2vw;
+}
+.status_bar ul li:nth-child(2) a i {
+  background-position: -12vw 0;
+}
+.status_bar ul li:nth-child(3) a i {
+  background-position: -23.2vw 0;
+}
+.status_bar ul li:nth-child(4) a i {
+  background-position: -34.66666667vw 0;
+}
+.status_bar ul li:nth-child(5) a i {
+  background-position: -46.13333333vw 0;
+}
+header {
+  height: 56.26666667vw;
+  background-image: url(../image/banner.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+header .status {
+  height: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.66666667vw;
+}
+header .status .left {
+  width: 21.33333333vw;
+  height: 3.46666667vw;
+  background-image: url(../image/wifi.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .status .center {
+  width: 9.6vw;
+  height: 3.46666667vw;
+  line-height: 3.46666667vw;
+  text-align: center;
+  font-size: 3.2vw;
+  color: white;
+}
+header .status .right {
+  width: 18.66666667vw;
+  height: 3.46666667vw;
+  background-image: url(../image/battery.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .nav {
+  height: 7.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4.26666667vw;
+}
+header .nav span {
+  width: 4.26666667vw;
+  height: 4.26666667vw;
+  background-image: url(../image/spirit_04.png);
+  background-size: 26.53333333vw 4.26666667vw;
+  background-repeat: no-repeat;
+  background-position: -5.6vw 0;
+}
+header .nav p {
+  width: 3.46666667vw;
+  height: 3.73333333vw;
+  background-image: url(../image/spirit_04.png);
+  background-size: 26.53333333vw 4.26666667vw;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+}
+header .nav p i {
+  width: 1.6vw;
+  height: 1.6vw;
+  background-color: #e60012;
+  border-radius: 50%;
+  position: absolute;
+  right: -0.8vw;
+  top: -1.06666667vw;
+}
+header .nav .search {
+  width: 77.6vw;
+  height: 7.2vw;
+  background-color: #fff;
+  border-radius: 3.6vw;
+  display: flex;
+  align-items: center;
+}
+header .nav .search i {
+  width: 4vw;
+  height: 4vw;
+  background-image: url(../image/spirit_04.png);
+  background-size: 26.53333333vw 4.26666667vw;
+  background-repeat: no-repeat;
+  background-position: -22.66666667vw 0;
+  margin: 0 2.4vw;
+  display: block;
+}
+header .nav .search input {
+  width: 49.86666667vw;
+  outline: none;
+  border: 0;
+}
+header .nav .search input::placeholder {
+  font-size: 3.2vw;
+  color: #393939;
+}
+header .pic {
+  width: 30.66666667vw;
+  height: 21.33333333vw;
+  background-image: url(../image/banner_03.png);
+  background-size: 30.53333333vw 20.26666667vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 2.66666667vw;
+  bottom: 13.33333333vw;
+}
+header .dot {
+  width: 100%;
+  height: 8vw;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -4.26666667vw;
+  border-radius: 50%;
+}
+header .dot ul {
+  margin: 1.86666667vw auto;
+  width: 8.26666667vw;
+  height: 1.6vw;
+  display: flex;
+  justify-content: space-between;
+}
+header .dot ul li a {
+  display: block;
+  width: 1.86666667vw;
+  height: 1.6vw;
+  background-color: #d4b1ed;
+  border-radius: 50%;
+}
+header .dot ul li:first-child a {
+  background-color: #aa64db;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .icon_bar {
+  height: 33.06666667vw;
+  width: 91.2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5.86666667vw;
+}
+.main .icon_bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .icon_bar ul li a {
+  display: block;
+}
+.main .icon_bar ul li a .pic {
+  width: 8.8vw;
+  height: 9.06666667vw;
+  background-image: url(../image/spirit_05.png);
+  background-position: 0 0;
+  background-size: 51.86666667vw 20.4vw;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.66666667vw;
+}
+.main .icon_bar ul li a p {
+  font-size: 3.2vw;
+  line-height: 3.2vw;
+  text-align: center;
+  color: #333;
+}
+.main .icon_bar ul li:nth-child(2) a .pic {
+  background-position: -10.66666667vw 0;
+}
+.main .icon_bar ul li:nth-child(3) a .pic {
+  background-position: -21.6vw 0;
+}
+.main .icon_bar ul li:nth-child(4) a .pic {
+  background-position: -32.8vw 0;
+}
+.main .icon_bar ul li:nth-child(5) a .pic {
+  background-position: -43.2vw 0;
+}
+.main .icon_bar ul:last-child li:nth-child(1) a .pic {
+  background-position: 0 -11.2vw;
+}
+.main .icon_bar ul:last-child li:nth-child(2) a .pic {
+  background-position: -10.66666667vw -11.2vw;
+}
+.main .icon_bar ul:last-child li:nth-child(3) a .pic {
+  background-position: -22.13333333vw -11.2vw;
+}
+.main .icon_bar ul:last-child li:nth-child(4) a .pic {
+  background-position: -32.8vw -11.2vw;
+}
+.main .icon_bar ul:last-child li:nth-child(5) a .pic {
+  background-position: -43.2vw -11.2vw;
+}
+.main .pic_md {
+  width: 94.4vw;
+  height: 26.13333333vw;
+  background-image: url(../image/banner_02.png);
+  background-size: 94.26666667vw 25.46666667vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 6.66666667vw;
+}
+.main .goods {
+  padding: 0 2.13333333vw;
+  width: 100%;
+  margin-top: 5.06666667vw;
+}
+.main .goods .nav {
+  height: 4vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.46666667vw;
+}
+.main .goods .nav .left {
+  font-size: 4vw;
+  line-height: 4vw;
+}
+.main .goods .nav .right {
+  font-size: 2.66666667vw;
+  color: #4b4b4b;
+  margin-top: 1.33333333vw;
+  margin-right: 0.8vw;
+}
+.main .goods .shops {
+  display: flex;
+  justify-content: space-between;
+}
+.main .goods .shops a {
+  display: block;
+}
+.main .goods .shops a .pic {
+  width: 30.66666667vw;
+  height: 24vw;
+  background-image: url(../uploads/goods_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.main .goods .shops a .txt {
+  font-size: 2.66666667vw;
+  text-align: center;
+  margin-top: 2.4vw;
+  line-height: 2.66666667vw;
+  color: #333;
+}

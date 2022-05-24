@@ -1,0 +1,217 @@
+@charset 'UTF-8';
+body,
+ul,
+p,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.active {
+  font-size: 3.73333333vw;
+  font-weight: 600;
+}
+.active .icon {
+  display: block;
+  bottom: -2.66666667vw;
+}
+header {
+  height: 57.06666667vw;
+  width: 100%;
+  background-image: linear-gradient(120deg, #c54bec 20%, #7118e2 60%, #181da3 100%);
+}
+header .status {
+  height: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.66666667vw;
+}
+header .status .left {
+  width: 21.33333333vw;
+  height: 3.46666667vw;
+  background-image: url(../image/wifi.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .status .center {
+  width: 9.6vw;
+  height: 3.46666667vw;
+  line-height: 3.46666667vw;
+  text-align: center;
+  font-size: 3.2vw;
+  color: white;
+}
+header .status .right {
+  width: 18.66666667vw;
+  height: 3.46666667vw;
+  background-image: url(../image/battery.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .pic {
+  height: 42.66666667vw;
+  display: flex;
+}
+header .pic .left {
+  flex: 1;
+  padding-left: 2.66666667vw;
+}
+header .pic .left p {
+  background-image: url(../image/spirit_02.png);
+  background-position: -2.93333333vw 0;
+  width: 1.6vw;
+  height: 3.2vw;
+  background-size: 5.6vw 21.73333333vw;
+}
+header .pic .left h1 {
+  font-size: 6.4vw;
+  color: white;
+  line-height: 10.66666667vw;
+  font-weight: 400;
+}
+header .pic .right {
+  background-image: url(../image/phone.png);
+  background-position: center;
+  flex: 1;
+  width: 50%;
+  background-size: contain;
+}
+header .login {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 3.2vw;
+}
+header .login span {
+  position: relative;
+}
+header .login span i {
+  position: absolute;
+  width: 1;
+  height: 1;
+  border-left: 2.4vw solid transparent;
+  border-right: 2.4vw solid transparent;
+  border-top: 2.4vw solid transparent;
+  border-bottom: 2.4vw solid white;
+  bottom: -3.2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.login_logout {
+  height: 85.33333333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.6vw;
+}
+.login_logout .log {
+  display: flex;
+  align-items: center;
+  margin-top: 8.26666667vw;
+  width: 85.33333333vw;
+  height: 12.26666667vw;
+  border: 0.26666667vw solid #dedede;
+  border-radius: 6.13333333vw;
+}
+.login_logout .log input {
+  border: 0;
+  outline: none;
+  margin-left: 2.4vw;
+  flex: 1;
+}
+.login_logout .log input::placeholder {
+  font-size: 3.2vw;
+  color: #6a6868;
+}
+.login_logout .log .icon {
+  background-image: url(../image/spirit_02.png);
+  background-size: 5.6vw 21.73333333vw;
+  background-position: 0 -8vw;
+  display: block;
+  height: 5.6vw;
+  width: 5.6vw;
+  margin-left: 3.2vw;
+}
+.login_logout .log:nth-child(2) .icon {
+  background-position: 0 -16.26666667vw;
+}
+.login_logout .btn a {
+  width: 53.33333333vw;
+  height: 12.26666667vw;
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  line-height: 12.26666667vw;
+  background-image: linear-gradient(90deg, #c54bec 0%, #7118e2 100%);
+  border-radius: 6.13333333vw;
+  display: block;
+  margin-top: 8.8vw;
+}
+footer {
+  padding: 0 3.73333333vw;
+  position: relative;
+  height: 35.2vw;
+}
+footer .end_icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border-top: 0.26666667vw solid #949494;
+}
+footer .end_icon a {
+  background-image: url(../image/spirit.png);
+  background-size: 69.06666667vw 6.8vw;
+  background-position: 0 0;
+  height: 6.93333333vw;
+  width: 8.53333333vw;
+  display: block;
+}
+footer .end_icon a:nth-child(2) {
+  background-position: -31.73333333vw 0;
+  width: 5.6vw;
+  height: 6.93333333vw;
+}
+footer .end_icon a:nth-child(3) {
+  width: 8.53333333vw;
+  height: 6.93333333vw;
+  background-position: -60.53333333vw 0;
+}
+footer .txt {
+  padding: 0 1.6vw;
+  position: absolute;
+  font-size: 3.2vw;
+  top: -2.13333333vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 1;
+  color: #505050;
+}

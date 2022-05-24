@@ -1,5 +1,5 @@
 *.psd
-css/
 image/
 uploads/
 *.pxcp
+*esc
